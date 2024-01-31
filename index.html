@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho__logo" src="img/logo.png" alt="logo Decodificador">
+        <nav class="cabecalho_menu">
+            <a class="cabecalho__titulo" href="index.html"> Decodificador de Textos</a></nav>
+    </header>
+
+    <main class="apresentacao">
+        <section>
+
+            <div class="apresentacao__conteudo">
+                <label class="story">Digite seu texto</label>
+                <textarea id="texto" class="texto" name="inputText"></textarea>
+                <h2 class="apresentacao__conteudo__botao__subtitulo"> <span class="material-symbols-outlined">
+                        error
+                    </span>Apenas letras minúsculas e sem acento.</h2>
+            </div>
+
+            <div class="apresentacao__conteudo__botoes">
+
+                <button onclick="criptografar()" class="apresentacao__conteudo__botao">Criptografar</button>
+                <button onclick="descriptografar()" class="apresentacao__conteudo__botao">Descriptografar</button>
+            </div>
+        </section>
+        <section>
+            <div id="resultado" class="resultado">
+                <label class="story">Resultado</label>
+                <img id="imagemResultado" class="imagem" src="img/foxsad.jpeg" alt="Imagem de Placeholder">
+                <p id="textoResultado">Nenhum texto digitado.</p>
+            </div>
+            <div class="botao__copia"><button onclick="copiar()" class="resultado__copia">Copiar</button></div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Eliziane</p>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
